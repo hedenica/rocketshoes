@@ -27,7 +27,7 @@ function Home() {
   }, []);
 
   const handleAddProduct = (product) => {
-    dispatch(CartActions.AddToCart(product));
+    dispatch(CartActions.addToCart(product));
   };
 
   return (
