@@ -8,7 +8,7 @@ import * as CartActions from '../../store/modules/cart/actions';
 
 import { ProductList } from './styles';
 
-function Home() {
+function Home({ amount }) {
   const [products, setProducts] = useState([]);
   const dispatch = useDispatch();
 
@@ -47,7 +47,7 @@ function Home() {
             <div>
               <MdAddShoppingCart size={16} color="#FFF" />
               {' '}
-              3
+              {amount[product.id] || 0}
             </div>
             <span>ADICIONAR AO CARRINHO</span>
           </button>
@@ -57,4 +57,11 @@ function Home() {
   );
 }
 
-export default connect()(Home);
+const mapStateToProps = (state) => ({
+  amount: state.cart.reduce((amount, product) => {
+    amount[product.id] = product.amount;
+    return amount;
+  }, {}),
+});
+
+export default connect(mapStateToProps)(Home);
