@@ -23,13 +23,18 @@ This project was developed at the [RocketSeat GoStack Bootcamp](https://rockets
 - [Reactotron](https://infinite.red/reactotron)
 - [VS Code](https://code.visualstudio.com/) with [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) and [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
+## ✅ To-do List
+
+- [ ]  Add a loading to button on add to cart
+- [ ]  Add responsiviness
+
 ## ℹ️ **How To Use**
 
 To clone and run this application, you'll need [Git](https://git-scm.com/), [Node.js v10.16](https://nodejs.org/) or higher + [Yarn v1.13](https://yarnpkg.com/) or higher installed on your computer. From your command line:
 
 ```jsx
 # Clone this repository
-$ git clone https://github.com/lukemorales/react-rocketshoes
+$ git clone https://github.com/hedenica/rocketshoes
 # Go into the repository
 $ cd react-rocketshoes
 # Install dependencies
