@@ -1,6 +1,6 @@
 # 👟 Rocketshoes
 
-![snapshot.png]('./src/assets/img/snapshot.png'))
+<img src="./src/assets/img/snapshot.png" alt="snapshot">
 
 ## 🚀 **Technologies**
 
